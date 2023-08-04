@@ -18,8 +18,10 @@ body{
     position: fixed;
     width: 100%;
     z-index: 1;
-    height: 110px;
-    overflow: hidden;
+    height: 120px;
+    overflow: visible;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
 
     .logo{
@@ -31,6 +33,9 @@ body{
         display: inline-block;
         z-index: 2;
         padding-right: 8rem;
+        padding-top: 10px;
+        height: 30px;
+        
     }
 
     span{
@@ -40,6 +45,12 @@ body{
     a{
         text-decoration: none;
         color: white;
+        padding: 5px;
+        overflow-x: hidden;
+        &:hover{
+            border-bottom: 2px solid #92B4A7;
+            overflow: hidden;
+        }
     }
     .search-bar{
         align-items: center;
@@ -62,7 +73,7 @@ body{
             padding-top: 5px;
         }
         button{
-            background-color: #007bff;
+            background-color: #92B4A7;
             color: #fff;
             border: none;
             outline: none;
@@ -75,6 +86,8 @@ body{
     .hamburger-menu{
         display: none;
         margin-right: 3rem;
+        height: 30px;
+        overflow-y: hidden;
 
         i{
             color: #fff;
@@ -111,7 +124,7 @@ body{
         text-align: center;
         padding-right: 4rem;
         li{
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
     }
 }
@@ -153,9 +166,14 @@ body{
     }
     h2{
         margin-top: 0;
+        font-family: 'Kanit', sans-serif;
+    }
+    h3{
+        font-family: 'Kanit', sans-serif;
     }
     p{
-        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: 'Kanit', sans-serif;
     }
     a{
         display: block;
@@ -164,7 +182,7 @@ body{
     .readmore{
         color: white;
         display: inline-block;
-        background-color: #313638;
+        background-color: #92B4A7;
         padding: 1rem;
         border-radius: 5px;
         text-decoration: none;
@@ -189,6 +207,7 @@ body{
       margin: 1rem;
       padding-top: 20%;
       margin-top: 8rem;
+      border-radius: 8px;
   
       h1 {
         position: relative;
@@ -214,6 +233,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     h1{
         font-size: 3vw;
     }
